@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-[#33ff33] font-mono selection:bg-[#33ff33] selection:text-black;
+    /* Subtle scanline effect */
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+  }
+}
+
+.crt-glow {
+  text-shadow: 0 0 5px #33ff33, 0 0 10px #33ff33;
+}
+
+.retro-border {
+  border: 2px solid #33ff33;
+  box-shadow: 4px 4px 0px #005500;
+}
